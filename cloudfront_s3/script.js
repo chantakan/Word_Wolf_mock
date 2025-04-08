@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const LOCAL_TARGET_WORD = "CLOUD";
     
     // API設定
-    const API_ENDPOINT = "https://r3u8x4paol.execute-api.us-east-2.amazonaws.com/prod/wordguess/"; // Lambda+API Gatewayチームから提供されるエンドポイント
+    const API_ENDPOINT = ""; // Lambda+API Gatewayチームから提供されるエンドポイント
     
     // IndexedDB (SQLiteの代わり) を使用して履歴を保存
     let db;
