@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Guess</h1>
+        <p class="subtitle">5文字の単語を当ててください</p>
+
+        <div id="game-container">
+            <div id="history-container"></div>
+            
+            <div id="input-container">
+                <form id="guess-form">
+                    <div class="input-wrapper">
+                        <input type="text" id="guess-input" maxlength="5" placeholder="5文字の単語" autocomplete="off">
+                        <button type="submit" id="submit-btn">送信</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="message-container"></div>
+            
+            <div class="mode-toggle">
+                <label for="api-mode">
+                    <input type="checkbox" id="api-mode">
+                    APIモード (AWS Lambda利用)
+                </label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
